@@ -5,4 +5,4 @@ COPY . /app
 WORKDIR /app
 RUN uv sync --frozen --compile-bytecode
 
-ENTRYPOINT ["/app/.venv/bin/fastapi", "run", "app/main.py", "--port", "80", "--host", "0.0.0.0"]
+ENTRYPOINT ["/app/.venv/bin/fastapi", "dev", "app/main.py", "--port", "80", "--host", "0.0.0.0"]
