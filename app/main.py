@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.routes import methods
+from app.api.routers import methods
 
 app = FastAPI(
     title="FastBin",
