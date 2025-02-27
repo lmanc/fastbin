@@ -8,3 +8,9 @@ dependencies = [
     "fastapi[standard]>=0.115.8",
     "loguru>=0.7.3",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-watch>=4.2.0",
+]
