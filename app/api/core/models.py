@@ -1,15 +1,15 @@
-from pydantic import BaseModel, Field, IPvAnyAddress, HttpUrl
+from pydantic import BaseModel, Field, HttpUrl, IPvAnyAddress
 
 
 class Headers(BaseModel):
     host: str
     connection: str
-    user_agent: str = Field(alias="user-agent")
+    user_agent: str = Field(alias='user-agent')
     accept: str
-    accept_language: str = Field(alias="accept-language")
-    referer: str
-    accept_encoding: str = Field(alias="accept-encoding")
-    cookie: str
+    accept_language: str = Field(alias='accept-language', default=None)
+    referer: str | None = None
+    accept_encoding: str = Field(alias='accept-encoding')
+    cookie: str | None = None
 
 
 class CoreResponse(BaseModel):
