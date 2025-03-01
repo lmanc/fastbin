@@ -84,7 +84,7 @@ convention = "google"
 quote-style = "single"
 indent-style = "space"
 skip-magic-trailing-comma = false
-line-ending = "cr-lf"
+line-ending = "lf"
 
 
 [lint.pycodestyle]
