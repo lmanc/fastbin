@@ -7,46 +7,56 @@ target-version = "py313"
 
 [lint]
 select = [
-    "A",    # flake8-builtins
-    "ANN",  # flake8-annotations
-    "ARG",  # flake8-unused-arguments
-    "B",    # flake8-bugbear
-    "BLE",  # flake8-blind-except
-    "COM",  # flake8-commas
-    "C4",   # flake8-comprehensions
-    "C90",  # mccabe
-    "D",    # pydocstyle
-    "E",    # pycodestyle errors
-    "ERA",  # eradicate
-    "EM",   # flake8-errmsg
-    "F",    # pyflakes
-    "FAST", # FastAPI
-    "FBT",  # flake8-boolean-trap
-    "FIX",  # flake8-fixme
-    "FLY",  # flynt
-    "FURB", # refurb
-    "G",    # flake8-logging-format
-    "I",    # isort
-    "ICN",  # flake8-import-conventions
-    "INP",  # flake8-no-pep420
-    "ISC",  # flake8-implicit-str-concat
-    "N",    # pep8-naming
-    "PERF", # Perflint
-    "PIE",  # flake8-pie
-    "PL",   # Pylint
-    "PTH",  # flake8-use-pathlib
-    "PT",   # flake8-pytest-style
-    "RET",  # flake8-return
-    "RSE",  # flake8-raise
-    "RUF",  # Ruff-specific rules
-    "S",    # flake8-bandit
-    "SIM",  # flake8-simplify
-    "SLF",  # flake8-self
-    "TID",  # flake8-tidy-imports
-    "TRY",  # tryceratops
-    "T10",  # flake8-debugger
-    "UP",   # pyupgrade
-    "W",    # pycodestyle warnings
+    "A",     # flake8-builtins
+    "ANN",   # flake8-annotations
+    "ARG",   # flake8-unused-arguments
+    "ASYNC", # flake8-async
+    "B",     # flake8-bugbear
+    "BLE",   # flake8-blind-except
+    "COM",   # flake8-commas
+    "C4",    # flake8-comprehensions
+    "C90",   # mccabe
+    "D",     # pydocstyle
+    "DOC",   # pydoclint
+    "DTZ",   # flake8-datetimez
+    "E",     # pycodestyle errors
+    "ERA",   # eradicate
+    "EM",    # flake8-errmsg
+    "F",     # pyflakes
+    "FA",    # flake8-future-annotations
+    "FAST",  # FastAPI
+    "FBT",   # flake8-boolean-trap
+    "FIX",   # flake8-fixme
+    "FLY",   # flynt
+    "FURB",  # refurb
+    "G",     # flake8-logging-format
+    "I",     # isort
+    "ICN",   # flake8-import-conventions
+    "INT",   # flake8-gettext
+    "INP",   # flake8-no-pep420
+    "ISC",   # flake8-implicit-str-concat
+    "N",     # pep8-naming
+    "PERF",  # Perflint
+    "PGH",   # pygrep-hooks
+    "PIE",   # flake8-pie
+    "PL",    # Pylint
+    "PTH",   # flake8-use-pathlib
+    "PT",    # flake8-pytest-style
+    "PYI",   # flake8-pyi
+    "RET",   # flake8-return
+    "RSE",   # flake8-raise
+    "RUF",   # Ruff-specific rules
+    "S",     # flake8-bandit
+    "SIM",   # flake8-simplify
+    "SLOT",  # flake8-slots
+    "SLF",   # flake8-self
+    "TID",   # flake8-tidy-imports
+    "TRY",   # tryceratops
+    "T10",   # flake8-debugger
+    "T20",   # flake8-print
+    "UP",    # pyupgrade
+    "W",     # pycodestyle warnings
+    "YTT",   # flake8-2020
 ]
 
 ignore = [
@@ -55,6 +65,7 @@ ignore = [
     "D100",    # missing docstring in public module
     "D104",    # missing docstring in public package
     "D106",    # missing docstring in public nested class
+    "D212",    # multi-line-summary-first-line
     "PLR0913", # too-many-arguments
     "W191",    # indentation contains tabs
     "ISC001",  # single-line-implicit-string-concatenation
