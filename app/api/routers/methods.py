@@ -5,7 +5,7 @@ from app.api.core import CoreResponse, logger
 router = APIRouter()
 
 
-@router.get('/get', tags=['HTTP Methods'], summary='Inspect GET request.')
+@router.get('/get', summary='Inspect GET request.')
 async def get(request: Request) -> CoreResponse:
     """`GET` endpoint."""
     logger.info(f'Received {request.method} request on {request.url} from {request.client.host}')

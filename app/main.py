@@ -16,5 +16,5 @@ app = FastAPI(
 )
 
 
-app.include_router(methods.router)
-app.include_router(inspection.router)
+app.include_router(methods.router, tags=['HTTP Methods'])
+app.include_router(inspection.router, tags=['Request Inspection'])
