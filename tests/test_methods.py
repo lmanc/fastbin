@@ -4,7 +4,7 @@ from app.api.core import CoreResponse
 
 
 def test_get(client):
-    """Test /get endpoint."""
+    """Test `/get` endpoint."""
     response = client.get('/get')
 
     assert response.status_code == status.HTTP_200_OK
