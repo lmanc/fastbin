@@ -7,7 +7,7 @@ router = APIRouter()
 
 @router.get('/get', tags=['HTTP Methods'], summary='Inspect GET request.')
 async def get(request: Request) -> CoreResponse:
-    """GET method."""
+    """`GET` endpoint."""
     logger.info(f'Received {request.method} request on {request.url} from {request.client.host}')
 
     return {
