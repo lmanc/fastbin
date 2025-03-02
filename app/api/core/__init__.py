@@ -1,4 +1,4 @@
 from .logger import logger
-from .models import CommonHeaders, CoreResponse
+from .models import CoreResponse, HeadersResponse
 
-__all__ = ['CommonHeaders', 'CoreResponse', 'logger']
+__all__ = ['CoreResponse', 'HeadersResponse', 'logger']

@@ -20,3 +20,9 @@ class CoreResponse(BaseModel):
     headers: CommonHeaders
     origin: IPvAnyAddress
     url: HttpUrl
+
+
+class HeadersResponse(BaseModel):
+    """Core response containing only headers."""
+
+    headers: CommonHeaders
