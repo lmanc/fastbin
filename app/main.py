@@ -5,7 +5,6 @@ from app.api.routers import inspection, methods
 app = FastAPI(
     title='FastBin',
     version='0.1.0',
-    swagger_ui_parameters={'tryItOutEnabled': True},
     openapi_tags=[
         {
             'name': 'HTTP Methods',
@@ -16,6 +15,7 @@ app = FastAPI(
             'description': 'Inspect the request data.',
         },
     ],
+    swagger_ui_parameters={'tryItOutEnabled': True},
 )
 
 
