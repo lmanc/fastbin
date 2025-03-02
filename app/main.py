@@ -11,7 +11,10 @@ app = FastAPI(
             'name': 'HTTP Methods',
             'description': 'Testing different HTTP verbs.',
         },
-        {'name': 'Request Inspection', 'description': 'Inspect the request data.'},
+        {
+            'name': 'Request Inspection',
+            'description': 'Inspect the request data.',
+        },
     ],
 )
 
